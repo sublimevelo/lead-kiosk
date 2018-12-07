@@ -2,10 +2,10 @@
 // Theme
 // --------------------------------------------------
 
-$primary-color-1: #0164a5;
+$primary-color-1: #0B5B9C;
 $primary-color-2: #2b3e82;
-$bland-color: #c7c7c7;
-$light-bland-color: #e5e5e5;
+$bland-color: #768797;
+$light-bland-color: #9aa9b7;
 
 body {
     // padding-top: 20px;
@@ -55,7 +55,7 @@ h1.logo a:before {
 }
 
 .slick-prev:before, .slick-next:before {
-    color: $bland-color;
+    color: $light-bland-color;
     font-size: 50px;
 }
 
@@ -107,10 +107,12 @@ button.off-canvas-reveal {
 }
 
 .card {
-    border-color: $primary-color-1;
+    // border-color: $primary-color-1;
+    border-color: $primary-color-2;
 }
 .card-divider {
-    background: $primary-color-2;
+    // background: $primary-color-2;
+    background: $primary-color-1;
     color: White;
     font-size: 1.3rem;
 }
