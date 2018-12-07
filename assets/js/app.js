@@ -12,7 +12,7 @@ $(document).foundation();
 // Custom JS
 // --------------------------------------------------
 
-let setOfflineMode = function(status, connectionStatus='') {
+const setOfflineMode = function (status, connectionStatus = '') {
     if (status === 'on') {
         $('body').addClass('offline');
     } else {
@@ -27,7 +27,32 @@ let setOfflineMode = function(status, connectionStatus='') {
     }
 }
 
-let slickInit = function() {
+const openFullscreen = function () {
+    const elem = document.documentElement;
+    if (elem.requestFullscreen) {
+        elem.requestFullscreen();
+    } else if (elem.mozRequestFullScreen) { /* Firefox */
+        elem.mozRequestFullScreen();
+    } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
+        elem.webkitRequestFullscreen();
+    } else if (elem.msRequestFullscreen) { /* IE/Edge */
+        elem.msRequestFullscreen();
+    }
+}
+
+const closeFullscreen = function () {
+    if (document.exitFullscreen) {
+        document.exitFullscreen();
+    } else if (document.mozCancelFullScreen) { /* Firefox */
+        document.mozCancelFullScreen();
+    } else if (document.webkitExitFullscreen) { /* Chrome, Safari and Opera */
+        document.webkitExitFullscreen();
+    } else if (document.msExitFullscreen) { /* IE/Edge */
+        document.msExitFullscreen();
+    }
+}
+
+const slickInit = function () {
     $('.carousel').slick({
         centerMode: true,
         centerPadding: '60px',
@@ -62,9 +87,9 @@ $(document).ready(function () {
 
     $('#toggleFullScreen').on('click', function () {
         if ($(this).is(":checked")) {
-            document.documentElement.webkitRequestFullscreen();
+            openFullscreen();
         } else {
-            document.webkitExitFullscreen();
+            closeFullscreen();
         }
     })
 
