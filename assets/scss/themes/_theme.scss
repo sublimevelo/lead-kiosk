@@ -71,7 +71,7 @@ h1.logo a:before {
     transition: opacity 1s;
     background-color: transparent;
     color: $primary-color-2;
-    opacity: .4;
+    opacity: .1;
     padding: 1rem 2rem;
     font-size: 1rem;
     border-left: 1px solid transparent;
@@ -87,7 +87,6 @@ h1.logo a:before {
     }
     &.slick-center {
         transition: opacity 1s;
-        opacity: 1;
     }
 }
 

@@ -52,6 +52,16 @@ const closeFullscreen = function () {
     }
 }
 
+const slickFadeout = function(center) {
+    // const current = $('.slick-current').next();
+    const levels = [1, .5, .2];
+    center.css('opacity', levels[0]);
+    center.next().css('opacity', levels[1]);
+    center.next().next().css('opacity', levels[2]);
+    center.prev().css('opacity', levels[1]);
+    center.prev().prev().css('opacity', levels[2]);
+}
+
 const slickInit = function () {
     $('.carousel').slick({
         centerMode: true,
@@ -60,6 +70,7 @@ const slickInit = function () {
         autoplay: true,
         autoplaySpeed: 3000,
     })
+    slickFadeout($('.slick-current'));
 }
 
 // check for online status
@@ -78,6 +89,10 @@ window.addEventListener('offline', function () {
 // set up the Slick carousel
 $(document).ready(function () {
     slickInit();
+
+    $('.carousel').on('beforeChange', function() {
+        slickFadeout($('.slick-current').next());
+    })
 
     $(document).on('open.zf.reveal', function () {
         $('.carousel').slick('slickPause');
