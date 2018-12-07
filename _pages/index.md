@@ -28,8 +28,10 @@ title: Homepage
       <h1>
         {{card.modal.title}}
       </h1>
-      <p class="lead">{{card.modal.lead}}</p>
-        {{card.modal.body}}
+      {% if card.modal.image.href %}
+      <div class="text-center"><img src="{{ card.modal.image.href }}"></div>
+      {% endif %}
+      {{card.modal.body}}
       <button class="close-button" data-close aria-label="Close modal" type="button">
           <span aria-hidden="true">&times;</span>
       </button>

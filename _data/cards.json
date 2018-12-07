@@ -12,11 +12,10 @@
       },
       "modal": {
         "image": {
-          "href": "https://via.placeholder.com/200"
+          "href": "/assets/img/callermax-still-1.png"
             },
         "title": "CallerMax Intro",
-        "lead": "Just the lead",
-        "body": "Here go another body"
+        "body": "<p>This will eventually be a real video</p>"
         }
     },
     {
@@ -32,11 +31,10 @@
         },
       "modal": {
         "image": {
-          "href": "https://via.placeholder.com/200"
+          "href": "/assets/img/lead-team-1.png"
             },
-        "title": "Toledo Video",
-        "lead": "Just the lead",
-        "body": "Here go the body"
+        "title": "The LEAD Team",
+        "body": "This will eventually be real content"
         }
     },
     {
@@ -45,9 +43,9 @@
       "online": true,
       "card": {
         "image": {
-          "href": "https://via.placeholder.com/970x550"
+          "href": "/assets/img/services-screencap-1.png"
         },
-        "title": "Sample link to website - LEAD Services",
+        "title": "LEAD Services",
         "body": "This block will not be displayed if the system does not have an active internet connection"
       },
       "link": {
