@@ -3,7 +3,7 @@ permalink: /
 layout: index
 title: Homepage
 ---
-
+<h2>Deployed?</h2>
 {% for card in site.data.cards %}
   <div class="cell small-4">
     <!-- card -->
