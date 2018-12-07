@@ -27,6 +27,16 @@ let setOfflineMode = function(status, connectionStatus='') {
     }
 }
 
+let slickInit = function() {
+    $('.carousel').slick({
+        centerMode: true,
+        centerPadding: '60px',
+        slidesToShow: 3,
+        autoplay: true,
+        autoplaySpeed: 3000,
+    })
+}
+
 // check for online status
 if (navigator.onLine) {
     setOfflineMode("off");
@@ -42,13 +52,7 @@ window.addEventListener('offline', function () {
 
 // set up the Slick carousel
 $(document).ready(function () {
-    $('.carousel').slick({
-        centerMode: true,
-        centerPadding: '60px',
-        slidesToShow: 3,
-        autoplay: true,
-        autoplaySpeed: 3000,
-    })
+    slickInit();
 
     $(document).on('open.zf.reveal', function () {
         $('.carousel').slick('slickPause');
