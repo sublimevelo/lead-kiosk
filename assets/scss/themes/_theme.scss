@@ -78,11 +78,12 @@ h1.logo a:before {
     border-right: 1px solid transparent;
     h3 {
         font-size: 1.5rem;
+        line-height: 1.2;
+        height: 3.2rem;
     }
     img.LEAD-tri {
-        display: inline;
+        display: inline-block;
         height: 1.25rem;
-        padding-right: 10px;
     }
     &.slick-center {
         transition: opacity 1s;
