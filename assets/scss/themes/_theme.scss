@@ -106,7 +106,12 @@ button.off-canvas-reveal {
     padding: .5rem;
 }
 
+.card {
+    border-color: $primary-color-1;
+}
 .card-divider {
+    background: $primary-color-2;
+    color: White;
     font-size: 1.3rem;
 }
 
