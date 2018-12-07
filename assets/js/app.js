@@ -60,11 +60,12 @@ $(document).ready(function () {
         $('.carousel').slick('slickPlay');
     })
 
-    $('#toggleFullScreen').on('click', function() {
-        if ($(this).is(":checked")) {
-            document.documentElement.webkitRequestFullscreen();
+    $('#toggleOfflineMode').on('click', function () {
+        if (!navigator.onLine) { return }
+        if ($("body").hasClass("offline")) {
+            setOfflineMode("off");
         } else {
-            document.webkitExitFullscreen();
+            setOfflineMode("on");
         }
     })
 
