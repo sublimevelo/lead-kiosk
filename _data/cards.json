@@ -1,0 +1,57 @@
+[
+    {
+      "id": "cm-video",
+      "type": "modal",
+      "online": false,
+      "card": {
+        "image": {
+          "href": "/assets/img/callermax-still-1.png"
+            },
+        "title": "CallerMax Onboarding Training",
+        "body": "Online caller training application to onboard new callers as well as provide advanced techniques to veteran staff."
+      },
+      "modal": {
+        "image": {
+          "href": "https://via.placeholder.com/200"
+            },
+        "title": "CallerMax Intro",
+        "lead": "Just the lead",
+        "body": "Here go another body"
+        }
+    },
+    {
+      "id": "cm-video2",
+      "type": "modal",
+      "online": false,
+      "card": {
+        "image": {
+          "href": "/assets/img/lead-team-1.png"
+            },
+        "title": "Meet the LEAD Team",
+        "body": "Thousands of years of combined fundraising experience at your service for pennies a day."
+        },
+      "modal": {
+        "image": {
+          "href": "https://via.placeholder.com/200"
+            },
+        "title": "Toledo Video",
+        "lead": "Just the lead",
+        "body": "Here go the body"
+        }
+    },
+    {
+      "id": "cm-video3",
+      "type": "link",
+      "online": true,
+      "card": {
+        "image": {
+          "href": "https://via.placeholder.com/970x550"
+        },
+        "title": "Sample link to website - LEAD Services",
+        "body": "This block will not be displayed if the system does not have an active internet connection"
+      },
+      "link": {
+        "url": "https://www.leadphilanthropy.com/products.html"
+      }
+    }
+]

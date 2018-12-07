@@ -1,0 +1,47 @@
+---
+layout: compress
+---
+<!doctype html>
+<html class="no-js" lang="{{ site.language}} ">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% if page.title %}{{ page.title }} &ndash; {% endif %}{{ site.title }}</title>
+    <meta name="description" content="{{ site.description }}" />
+    <meta name="google-site-verification" content="{{ site.google-verification }}">
+    <link rel="shortcut icon" href="/assets/img/icons/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/img/icons/apple-touch-icon-144x144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/img/icons/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/img/icons/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="/assets/img/icons/apple-touch-icon-precomposed.png">
+    <link rel="stylesheet" href="/assets/css/app.css">
+    <link rel="stylesheet" href="/assets/slick/slick/slick.css">
+    <link rel="stylesheet" href="/assets/slick/slick/slick-theme.css">
+</head>
+
+<body>
+    <div class="off-canvas-wrapper">
+        <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
+
+            {% include off-canvas-menu.html %}
+
+        </div>
+
+        <div class="off-canvas-content" data-off-canvas-content>
+            <button type="button" class="off-canvas-reveal hollow button tiny secondary" data-toggle="offCanvas">+</button>
+            <!-- <span class="label alert offline-msg">Offline</span> -->
+            <div class="header">
+                <h1 class="logo"><a href="/">LEAD Philanthropy</a></h1>
+                <div>
+                    <div class="header-bottom"></div>
+                </div>
+            </div>
+            {{ content }}
+        </div>
+    </div>
+    <script src="/assets/js/all.js"></script>
+</body>
+
+</html>

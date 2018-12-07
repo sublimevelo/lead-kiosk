@@ -1,0 +1,47 @@
+[
+    {
+        "id": "callerMax",
+        "title": "CallerMax",
+        "description": "Online caller training application to onboard new callers as well as provide advanced techniques to veteran staff. Coming soon."
+    },
+    {
+        "id": "annualFund",
+        "title": "Annual Fund/Advancement Office Audits",
+        "description": "LEAD will thoroughly review your Annual Fund and provide observations and recommendations on all out-going solicitations/solicitation calendars, staffing (across all Advancement Office departments), Advancement Services/Gifts Processing processes, and ensure every strategy is working to accelerate your donors."
+    },
+    {
+        "id": "annualFundPlanning",
+        "title": "Annual Fund Planning",
+        "description": "LEAD can create a comprehensive solicitation calendar that thoughtfully reviews all Annual Fund channels to determine who will be solicited through which approach for the entire fiscal year. LEAD will help your organization create messaging and guide you on the timing of each outreach to make sure touch points complement instead of compete."
+    },
+    {
+        "id": "virtualConsulting",
+        "title": "Unlimited Virtual Consulting",
+        "description": "Do you wish you had an industry expert on staff? LEAD’s staff has the ability to package services with unlimited virtual consulting. Unlike other firms that charge by the hour, or only offer so many hours worth of counsel, LEAD will provide you and your staff unlimited calls and emails. Reviewing solicitations, recommending strategies, and analyzing your program’s results are all included services."
+    },
+    {
+        "id": "directMail",
+        "title": "Direct Mail/eSolicitations",
+        "description": "LEAD’s experience with Direct Mail/eSolicitations allows it to guide clients on who and when to reach out to via these channels, provide what the messaging should be, and deliver suggested ask amounts."
+    },
+    {
+        "id": "dayOfGiving",
+        "title": "Day of Giving/Crowdfunding",
+        "description": "Thanks to the success of Giving Tuesday, and the advent of crowdfunding, many organizations have created separate, institution-specific campaigns. LEAD’s recommendations allow clients to take advantage of industry best-practices to exceed their goals with these fundraising channels."
+    },
+    {
+        "id": "highEnd",
+        "title": "High-End Annual Fund",
+        "description": "Too many organizations allow their higher-end Annual Fund/lower-end Major Gift prospects to fall through the cracks. These prospects are your institution’s Major Gift donors during your next capital campaign. LEAD specializes in a series of strategies that safeguards the solicitations of these extremely valuable prospects."
+    },
+    {
+        "id": "seniorClass",
+        "title": "Senior Class Gift",
+        "description": "LEAD will help you plan out your marketing and solicitation approach to give your organization the best opportunity to securing your first gift from someone who is hopefully a lifelong donor. These plans will focus on meaningful asks and appropriate stewardship to make sure the gift-giving process is not viewed as merely a transaction that has the graduating senior buying recognition."
+    },
+    {
+        "id": "studentPhilanthropic",
+        "title": "Student Philanthropic Awareness",
+        "description": "Educating students today about the philanthropy that has come before them must start when they step foot on campus. LEAD has successfully guided schools on how to integrate the appropriate topics into convocations, first-year student welcome sessions (for both students and parents), and campus publications."
+    }
+]
