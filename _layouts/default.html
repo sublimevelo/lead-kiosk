@@ -24,21 +24,32 @@ layout: compress
 <body>
     <div class="off-canvas-wrapper">
         <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
-
             {% include off-canvas-menu.html %}
-
         </div>
 
         <div class="off-canvas-content" data-off-canvas-content>
-            <button type="button" class="off-canvas-reveal hollow button tiny secondary" data-toggle="offCanvas">+</button>
-            <!-- <span class="label alert offline-msg">Offline</span> -->
-            <div class="header">
-                <h1 class="logo"><a>LEAD Philanthropy</a></h1>
-                <div>
-                    <div class="header-bottom"></div>
+            <div class="screensaver">
+                <div class="grid-container">
+                    <div class="grid-x grid-margin-x">
+                        <div class="cell">
+                            <div class="flex-video">
+                                <iframe src="https://player.vimeo.com/video/281019045" width="640" height="360" frameborder="0" webkitallowfullscreen=""
+                                    mozallowfullscreen="" allowfullscreen=""></iframe>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            {{ content }}
+            <div class="normal">
+                <div class="header">
+                    <h1 class="logo"><a>LEAD Philanthropy</a></h1>
+                    <div>
+                        <div class="header-bottom"></div>
+                    </div>
+                </div>
+                {{ content }}
+            </div>
+            <button type="button" class="off-canvas-reveal hollow button tiny secondary" data-toggle="offCanvas">+</button>
         </div>
     </div>
     <script src="/assets/js/all.js"></script>

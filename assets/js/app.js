@@ -73,4 +73,14 @@ $(document).ready(function () {
         }
     })
 
+    $('#toggleScreensaver').on('click', function () {
+        if ($("body").hasClass("screensaver-on")) {
+            $("body").removeClass("screensaver-on");
+            $('.carousel').slick('slickPlay');
+        } else {
+            $("body").addClass("screensaver-on");
+            $('.carousel').slick('slickPause');
+        }
+    })
+
 })

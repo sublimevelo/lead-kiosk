@@ -139,3 +139,22 @@ button.off-canvas-reveal {
         display: inline-block;
     }
 }
+
+.screensaver {
+    display: none;
+    background: lightslategrey;
+    z-index: 1000;
+}
+
+.normal {
+    display: block;
+}
+
+.screensaver-on {
+    .screensaver {
+        display: block;
+    }
+    .normal, .normal * {
+        display: none;
+    }
+}
