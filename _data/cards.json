@@ -11,11 +11,12 @@
         "body": "Online caller training application to onboard new callers as well as provide advanced techniques to veteran staff."
       },
       "modal": {
+        "size": "medium",
         "image": {
-          "href": "/assets/img/callermax-still-1.png"
+          "href": ""
             },
         "title": "CallerMax Intro",
-        "body": "<p>This will eventually be a real video</p>"
+        "body": "<div class=\"flex-video\"><iframe src=\"https://player.vimeo.com/video/281019045\" width=\"640\" height=\"360\" frameborder=\"0\"></iframe></div>"
         }
     },
     {
@@ -30,6 +31,7 @@
         "body": "Thousands of years of combined fundraising experience at your service for pennies a day."
         },
       "modal": {
+        "size": "large",
         "image": {
           "href": "/assets/img/lead-team-1.png"
             },

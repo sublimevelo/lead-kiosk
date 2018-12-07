@@ -24,7 +24,7 @@ title: Homepage
 
     <!-- reveal -->
     {% if card.type == "modal" %}
-    <div class="large reveal" id="{{card.id}}" data-reveal data-animation-in="scale-in-up easeInOut" data-animation-out="scale-out-down easeInOut">
+    <div class="{% if card.modal.size %} {{ card.modal.size }}{% endif %} reveal" id="{{card.id}}" data-reveal data-animation-in="scale-in-up easeInOut" data-animation-out="scale-out-down easeInOut">
       <h1>
         {{card.modal.title}}
       </h1>
