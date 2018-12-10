@@ -1,7 +1,7 @@
 ---
 permalink: /
 layout: index
-title: Homepage
+title: Onlypage
 ---
 {% for card in site.data.cards %}
   <div class="cell small-4">
