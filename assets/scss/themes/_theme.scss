@@ -2,26 +2,19 @@
 // Theme
 // --------------------------------------------------
 
-$primary-color-1: #0B5B9C;
+$primary-color-1: #0461A2;
 $primary-color-2: #2b3e82;
 $bland-color: #768797;
 $light-bland-color: #9aa9b7;
 
 body {
-    // padding-top: 20px;
     background-color: #fafafa;
-    // /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0164a5+0,2b3e82+100 */
-    // background: $primary-color-1; /* Old browsers */
-    // background: -moz-linear-gradient(-45deg, $primary-color-1 0%, $primary-color-2 100%); /* FF3.6-15 */
-    // background: -webkit-linear-gradient(-45deg, $primary-color-1 0%,$primary-color-2 100%); /* Chrome10-25,Safari5.1-6 */
-    // background: linear-gradient(135deg, $primary-color-1 0%,$primary-color-2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$primary-color-1', endColorstr='$primary-color-2',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
 .header {
     padding: 0;
     padding-top: 20px;
-    background: linear-gradient(to top,#2c3983,#0065ab);
+    background: linear-gradient(to top,$primary-color-2,$primary-color-1);
     background-position: center;
 }
 
@@ -107,12 +100,10 @@ button.off-canvas-reveal {
 }
 
 .card {
-    // border-color: $primary-color-1;
     border-color: $primary-color-2;
 }
 .card-divider {
-    // background: $primary-color-2;
-    background: $primary-color-1;
+    background: $primary-color-2;
     color: White;
     font-size: 1.3rem;
 }

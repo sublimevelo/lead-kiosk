@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: base
 ---
 <div class="grid-container carousel-container">
     <div class="grid-x grid-margin-x">
