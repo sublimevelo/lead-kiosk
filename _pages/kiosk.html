@@ -1,0 +1,32 @@
+---
+permalink: /kiosk
+layout: base-kiosk
+title: Onlypage
+---
+{% include components/screensaver.html %}
+<div class="normal">
+    <div class="header">
+        <h1 class="logo"><a>LEAD Philanthropy</a></h1>
+        <div>
+            <div class="header-bottom"></div>
+        </div>
+    </div>
+    <div class="grid-container carousel-container">
+        <div class="grid-x grid-margin-x">
+            <div class="cell small-12">
+                {% include components/carousel.html %}
+            </div>
+        </div>
+    </div>
+    <a href="#cards-container" data-smooth-scroll>
+        <div class="more text-center" id="more-cards">
+            <p><img src="assets/img/icon-caret-down.svg"></p>
+        </div>
+        <div class="grid-container cards-container" id="cards-container">
+            <div class="grid-x grid-margin-x">
+                {% include components/cards.html %}
+            </div>
+        </div>
+    </a>
+</div>
+<button type="button" class="off-canvas-reveal hollow button tiny secondary" data-toggle="offCanvas">+</button>
