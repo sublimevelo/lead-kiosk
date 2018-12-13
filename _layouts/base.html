@@ -1,37 +1,141 @@
 ---
 layout: compress
 ---
-<!doctype html>
-<html class="no-js" lang="{{ site.language}} ">
+<!DOCTYPE html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
 
 <head>
+    {% if jekyll.environment == "production" %}
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118570282-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-118570282-1');
+    </script>
+    {% endif %}
+
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="noindex">
+    <!-- Set the viewport width to device width for mobile -->
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="LEAD helps you do the hard work that successful fundraising requires.">
+    <meta name="keywords" content="giving,higher education,philanthropy,fund raising,fundraising">
+    <meta name="google-site-verification" content="QFCHHHnalgohOC0yU2oHDwGremkfLYcG9YSt1tHz6cQ" />
+    <link id="favicon" rel="icon" type="image/png" href="{% static '/images/icon.png' %}">
+
     <title>{% if page.title %}{{ page.title }} &ndash; {% endif %}{{ site.title }}</title>
-    <meta name="description" content="{{ site.description }}" />
-    <meta name="google-site-verification" content="{{ site.google-verification }}">
-    <link rel="shortcut icon" href="/assets/img/icons/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/img/icons/apple-touch-icon-144x144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/img/icons/apple-touch-icon-114x114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/img/icons/apple-touch-icon-72x72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="/assets/img/icons/apple-touch-icon-precomposed.png">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
+        crossorigin="anonymous">
+    <!-- Included CSS Files (Compressed) -->
+    <!-- <link rel="stylesheet" href="{% static '/css/app.min.css' %}"> -->
     <link rel="stylesheet" href="/assets/slick/slick/slick.css">
     <link rel="stylesheet" href="/assets/slick/slick/slick-theme.css">
     <link rel="stylesheet" href="/assets/css/app.css">
+    <script src="{% static '/bower_components/modernizr/modernizr.js' %}"></script>
+
+    <!-- Google fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Playfair+Display:400italic' rel='stylesheet'
+        type='text/css' />
+
+    <!-- IE Fix for HTML5 Tags -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
 </head>
 
-<body>
-    <div class="off-canvas-wrapper">
-        <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
-            {% include off-canvas-menu.html %}
-        </div>
-        <div class="off-canvas-content" data-off-canvas-content>
-                {{ content }}
+<body class="page {% if page.id %}{{page.id}}{% endif%}">
+    <!-- ######################## Header ######################## -->
+    <div class="off-canvas-wrap" data-offcanvas>
+        <div class="inner-wrap">
+            <!-- ######################## Header ######################## -->
+            <header>
+                <div class="row hide-for-large-up">
+                    <div class="contain-to-grid sticky">
+                        <div class="top-bar" data-topbar role="navigation">
+                            <div class="medium-12 columns text-right">
+                                <a class="right-off-canvas-toggle menu-icon"><span class="mobile-menu-toggle">Menu <i class="fi-list large"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <aside class="right-off-canvas-menu hide-for-large-up">
+                    <div class="nav-wrapper">
+                        <div class="text-center mobile-nav-container">
+                            <nav>
+                                {% include 'main-nav.html' %}
+                            </nav>
+                        </div>
+                    </div>
+                </aside>
+                <!-- ######################## Main Menu ######################## -->
+
+                <div class="row top-bar-section text-center show-for-large-up">
+
+                    <div class="contain-to-grid sticky">
+                        <nav class="top-bar" data-topbar role="navigation" data-options="sticky_on: large">
+                            {% include 'main-nav.html' %}
+                        </nav>
+                    </div>
+                </div>
+
+                <h1 class="logo"><a href="/">{{ site.title }}</a></h1>
+
+                <div>
+                    <div class="header-bottom"></div>
+                </div>
+            </header>
+
+            <a class="exit-off-canvas"></a>
+            {{ content }}
+
+            <i class="fas fa-arrow-alt-circle-up floating-return"></i>
+
+            <!-- ######################## Footer ######################## -->
+            <footer>
+                <section class="footer-gradient">
+                    <div class="footer-top">
+                    </div>
+                    <div class="row text-center footer-content">
+                        <div class="medium-4 columns">
+                            <p><a href="mailto:{{ contact.email }}">{{ contact.email }}</a></p>
+                        </div>
+                        <!-- Contact Form -->
+                        <div class="medium-4 columns">
+                            <p><a href="tel:7024996524">702.499.6524</a></p>
+                        </div>
+
+                        <div class="medium-4 columns">
+                            <p><a href="#" data-reveal-id="login-modal">Development Projections</a></p>
+                        </div>
+                    </div>
+                </section>
+            </footer>
+
         </div>
     </div>
-    <script src="/assets/js/all.js"></script>
+
+    {% include 'partials/login-modal.html' %}
+    <!-- Included JS Files (Compressed) -->
+    <script src="{% static '/js/app.min.js' %}"></script>
+    {% block more_js %}
+    {% endblock %}
+    <script>
+        $(document).foundation();
+        $(function () {
+            FastClick.attach(document.body);
+        });
+    </script>
 </body>
 
 </html>
