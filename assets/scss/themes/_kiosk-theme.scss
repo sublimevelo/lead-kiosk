@@ -1,0 +1,162 @@
+// --------------------------------------------------
+// Theme
+// --------------------------------------------------
+
+@import "../foundation/settings";
+@import "../foundation/foundation";
+
+body {
+    background-color: #fafafa;
+}
+
+.header {
+    padding: 0;
+    padding-top: 20px;
+    background: linear-gradient(to top,$primary-color-2,$primary-color-1);
+    background-position: center;
+}
+
+.header-bottom {
+    background-image: url(/assets/img/LEAD_curve_top_upper.svg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 100px;
+    margin-top: -2px;
+}
+
+h1.logo a {
+    display: block;
+    overflow: hidden;
+    width: 350px;
+    height: 116px;
+    background: url(/assets/img/LEAD_logo_white.png) no-repeat;
+    background-size: 350px 116px;
+    margin: 0 auto;
+}
+
+h1.logo a:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+}
+
+.carousel-container {
+    margin-bottom: 20px;
+}
+
+.slick-prev:before, .slick-next:before {
+    color: $light-bland-color;
+    font-size: 50px;
+}
+
+.slick-prev:before {
+    margin-left: -30px;
+}
+
+.more img {
+    width: 110px;
+}
+
+.slick-slide {
+    transition: opacity 1s;
+    background-color: transparent;
+    color: $primary-color-2;
+    opacity: .1;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    h3 {
+        font-size: 1.5rem;
+        line-height: 1.2;
+        height: 3.2rem;
+    }
+    img.LEAD-tri {
+        display: inline-block;
+        height: 1.25rem;
+    }
+    &.slick-center {
+        transition: opacity 1s;
+    }
+}
+
+.more h2 {
+    color: $bland-color;
+}
+
+button.off-canvas-reveal {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    background: White !important;
+    opacity: .7;
+}
+
+.off-canvas {
+    padding: .5rem;
+}
+
+.card {
+    border-color: $primary-color-2;
+}
+.card-divider {
+    background: $primary-color-2;
+    color: White;
+    font-size: 1.3rem;
+}
+
+.hide-offline {
+    display: block;
+}
+
+.show-offline-only {
+    display: none;
+}
+
+.offline {
+    .hide-offline {
+        display: none;
+    }
+    .show-offline-only {
+        display: block;
+    }
+}
+
+.show-no-connection-only {
+    display: none;
+}
+
+.no-connection {
+    .show-no-connection-only {
+        display: block;
+    }
+    span.show-no-connection-only {
+        display: inline-block;
+    }
+}
+
+.screensaver {
+    display: none;
+    background: lightslategrey;
+    z-index: 1000;
+}
+
+.normal {
+    display: block;
+}
+
+.screensaver-on {
+    .screensaver {
+        display: block;
+    }
+    .normal, .normal * {
+        display: none;
+    }
+}
+
+@media print, screen and (min-width: 40em) {
+    .reveal.medium {
+        width: 70%;
+    }
+}
