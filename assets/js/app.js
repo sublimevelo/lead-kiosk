@@ -83,7 +83,6 @@ const loadCards = function () {
 }
 
 const saveCards = function (cards) {
-    // let cards = getCheckedCards();
     if (cards.length) {
         localStorage.setItem("cards", JSON.stringify(cards));
     }
@@ -91,7 +90,6 @@ const saveCards = function (cards) {
 
 const restoreCards = function () {
     const cards = loadCards();
-    console.log(cards);
     if (!cards) {
         return false;
     }
