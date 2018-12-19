@@ -13,10 +13,14 @@
       "modal": {
         "size": "medium",
         "image": {
-          "href": "/assets/img/callermax-still-1.png"
-            },
+          "href": ""
+        },
+        "video": {
+          "src": "/media/examples/flower.webm",
+          "type": "video/webm"
+        },
         "title": "CallerMax Intro",
-        "body": "This will eventually be a real video"
+        "body": ""
         }
     },
     {

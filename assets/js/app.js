@@ -95,7 +95,7 @@ const restoreCards = function () {
     displayCards(cards);
     $("input").prop("checked", false);
     cards.forEach(cardId => {
-        $("input#" + cardId).prop("checked", true);
+        $("input#check-" + cardId).prop("checked", true);
     });
 }
 

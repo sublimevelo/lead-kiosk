@@ -40,7 +40,7 @@
 <ul class="no-bullet available-cards">
     {% for card in site.data.cards %}
         <li>
-            <input type="checkbox" id="{{card.id}}" value="{{card.id}}"> {{ card.card.title }}
+            <input type="checkbox" id="check-{{card.id}}" value="{{card.id}}"> {{ card.card.title }}
         </li>
     {% endfor %}
 </ul>
