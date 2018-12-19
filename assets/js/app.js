@@ -12,8 +12,6 @@ $(document).foundation();
 // Custom JS
 // --------------------------------------------------
 
-let db;
-
 const setOfflineMode = function (status, connectionStatus = '') {
     if (status === 'on') {
         $('body').addClass('offline');
@@ -111,9 +109,9 @@ const getCheckedCards = function () {
 
 const displayCards = function (cards) {
     $(".card").closest(".cell").hide();
-    for (const cardId of cards) {
+    cards.forEach(function(cardId) {
         $(".cards-container #" + cardId).closest(".cell").show();
-    }
+    })
 }
 
 // check for online status
