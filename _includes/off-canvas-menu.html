@@ -2,6 +2,7 @@
     <span class="label alert offline-msg show-offline-only">Offline Mode<span class="show-no-connection-only">&nbsp;(no connection)</span></span>
 </p>
 
+<h3>Settings</h3>
 <label>Fullscreen
     <div class="switch">
         <input class="switch-input" id="toggleFullScreen" type="checkbox" name="toggleFullScreen">
@@ -35,10 +36,11 @@
     </div>
 </label>
 
+<h3>Which Cards?</h3>
 <ul class="no-bullet available-cards">
     {% for card in site.data.cards %}
         <li>
-            <input type="checkbox"> {{ card.card.title }}
+            <input type="checkbox" id="{{card.id}}" value="{{card.id}}"> {{ card.card.title }}
         </li>
     {% endfor %}
 </ul>

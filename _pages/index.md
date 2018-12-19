@@ -11,7 +11,7 @@ title: Onlypage
     {% elsif card.type == "link" %}
     <a href="{{card.link.url}}" target="_blank">
     {% endif %}
-      <div class="card{% if card.online %} hide-offline{% endif %}">
+      <div class="card{% if card.online %} hide-offline{% endif %}" id="{{card.id}}">
           <div class="card-divider">
               {{card.card.title}}
           </div>

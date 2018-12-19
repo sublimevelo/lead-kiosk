@@ -12,6 +12,8 @@ $(document).foundation();
 // Custom JS
 // --------------------------------------------------
 
+let db;
+
 const setOfflineMode = function (status, connectionStatus = '') {
     if (status === 'on') {
         $('body').addClass('offline');
@@ -72,6 +74,50 @@ const slickInit = function () {
     slickFadeout($('.slick-center'));
 }
 
+const loadCards = function () {
+    let cards = localStorage.getItem('cards');
+    if (cards.length) {
+        return JSON.parse(cards);
+    }
+    return false;
+}
+
+const saveCards = function (cards) {
+    // let cards = getCheckedCards();
+    if (cards.length) {
+        localStorage.setItem("cards", JSON.stringify(cards));
+    }
+}
+
+const restoreCards = function () {
+    const cards = loadCards();
+    console.log(cards);
+    if (!cards) {
+        return false;
+    }
+    displayCards(cards);
+    $("input").prop("checked", false);
+    cards.forEach(cardId => {
+        $("input#" + cardId).prop("checked", true);
+    });
+}
+
+const getCheckedCards = function () {
+    let cards = [];
+    const checked = $(".available-cards input:checked");
+    checked.each(function() {
+        cards.push($(this).val())
+    });
+    return cards;
+}
+
+const displayCards = function (cards) {
+    $(".card").closest(".cell").hide();
+    for (const cardId of cards) {
+        $(".cards-container #" + cardId).closest(".cell").show();
+    }
+}
+
 // check for online status
 if (navigator.onLine) {
     setOfflineMode("off");
@@ -87,6 +133,15 @@ window.addEventListener('offline', function () {
 
 // set up the Slick carousel
 $(document).ready(function () {
+
+    restoreCards();
+
+    $(".available-cards input").on("change", function() {
+        let cards = getCheckedCards();
+        displayCards(cards);
+        saveCards(cards);
+    })
+
     slickInit();
 
     $('.carousel').on('beforeChange', function() {
