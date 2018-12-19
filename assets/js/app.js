@@ -74,22 +74,23 @@ const slickInit = function () {
 
 const loadCards = function () {
     let cards = localStorage.getItem('cards');
-    if (cards.length) {
+    if (cards) {
         return JSON.parse(cards);
     }
     return false;
 }
 
 const saveCards = function (cards) {
-    if (cards.length) {
+    if (cards) {
         localStorage.setItem("cards", JSON.stringify(cards));
     }
 }
 
 const restoreCards = function () {
-    const cards = loadCards();
+    let cards = loadCards();
     if (!cards) {
-        return false;
+        $("input").prop("checked", true);
+        cards = getCheckedCards();
     }
     displayCards(cards);
     $("input").prop("checked", false);
