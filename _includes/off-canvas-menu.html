@@ -34,3 +34,11 @@
         </label>
     </div>
 </label>
+
+<ul class="no-bullet available-cards">
+    {% for card in site.data.cards %}
+        <li>
+            <input type="checkbox"> {{ card.card.title }}
+        </li>
+    {% endfor %}
+</ul>
