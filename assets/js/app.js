@@ -149,6 +149,7 @@ $(document).ready(function () {
         $('.carousel').slick('slickPause');
     }).on('closed.zf.reveal', function () {
         $('.carousel').slick('slickPlay');
+        $('video').trigger('pause');
     })
 
     $('#toggleFullScreen').on('click', function () {
