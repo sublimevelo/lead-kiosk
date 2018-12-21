@@ -1,0 +1,14 @@
+[
+    {
+        "id": "cm-intro",
+        "title": "CallerMax Promo",
+        "src": "callermax-promo.mp4",
+        "type": "video/mp4"
+    },
+    {
+        "id": "cm-welcome",
+        "title": "Welcome to CallerMax",
+        "src": "welcome-to-callermax.mp4",
+        "type": "video/mp4"
+    }
+]

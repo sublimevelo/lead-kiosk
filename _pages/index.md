@@ -38,6 +38,9 @@ title: Onlypage
           </video>
         </div>
       {% endif %}
+      {% if card.modal.include %}
+        {% include {{ card.modal.include }} %}
+      {% endif %}
       {{card.modal.body}}
       <button class="close-button" data-close aria-label="Close modal" type="button">
           <span aria-hidden="true">&times;</span>

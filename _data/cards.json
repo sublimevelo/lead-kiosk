@@ -12,16 +12,35 @@
       },
       "modal": {
         "size": "medium",
+        "include": "components/cm-video-set.html",
+        "title": "Virtual Volunteer services",
+        "body": "Here is an expanded description"
+      }
+    },
+    {
+      "id": "vv-video",
+      "type": "modal",
+      "online": true,
+      "card": {
+        "image": {
+          "href": "/assets/img/callermax-still-1.png"
+        },
+        "title": "Virtual Volunteer",
+        "body": "Here is an expanded description"
+      },
+      "modal": {
+        "size": "medium",
         "image": {
           "href": ""
         },
         "video": {
-          "src": "/media/examples/flower.webm",
-          "type": "video/webm"
+          "src": "/assets/video/vv_videos/Toledo-YMCA-feasibility-study-overview-1_0.mp4",
+          "poster": "/assets/img/callermax-still-1.png",
+          "type": "video/mp4"
         },
-        "title": "CallerMax Intro",
-        "body": ""
-        }
+        "title": "Virtual Volunteer services",
+        "body": "Here is an expanded description"
+      }
     },
     {
       "id": "cm-video2",
@@ -42,20 +61,5 @@
         "title": "The LEAD Team",
         "body": "This will eventually be real content"
         }
-    },
-    {
-      "id": "cm-video3",
-      "type": "link",
-      "online": true,
-      "card": {
-        "image": {
-          "href": "/assets/img/services-screencap-1.png"
-        },
-        "title": "LEAD Services",
-        "body": "This block will not be displayed if the system does not have an active internet connection"
-      },
-      "link": {
-        "url": "https://www.leadphilanthropy.com/products.html"
-      }
     }
 ]
