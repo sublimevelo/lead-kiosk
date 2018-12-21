@@ -109,7 +109,7 @@ const getCheckedCards = function () {
 }
 
 const displayCards = function (cards) {
-    $(".card").closest(".cell").hide();
+    $(".main .card").closest(".cell").hide();
     cards.forEach(function(cardId) {
         $(".cards-container #" + cardId).closest(".cell").show();
     })
