@@ -33,7 +33,13 @@ title: Onlypage
       {% endif %}
       {% if card.modal.video.src %}
         <div class="flex-video">
-          <video controls width="800">
+          <video
+            controls
+            width="800"
+            {% if card.modal.video.poster %}
+            poster="{{ card.modal.video.poster }}"
+            {% endif %}
+            >
             <source src="{{card.modal.video.src}}" type="{{card.modal.video.type}}">
           </video>
         </div>
