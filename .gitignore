@@ -5,6 +5,9 @@ assets/css/app.css
 assets/js/all.js
 rev-manifest.json
 
+# Lg video files
+assets/video
+
 # Cache
 .sass-cache/
 *.sassc
