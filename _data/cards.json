@@ -13,14 +13,14 @@
       "modal": {
         "size": "medium",
         "include": "components/cm-video-set.html",
-        "title": "Virtual Volunteer services",
-        "body": "Here is an expanded description"
+        "title": "CallerMax Onboarding Training",
+        "body": "Online caller training application to onboard new callers as well as provide advanced techniques to veteran staff."
       }
     },
     {
       "id": "vv-video",
       "type": "modal",
-      "online": true,
+      "online": false,
       "card": {
         "image": {
           "href": "/assets/img/callermax-still-1.png"
