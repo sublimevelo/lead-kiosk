@@ -62,12 +62,18 @@ const slickFadeout = function(center) {
 }
 
 const slickInit = function () {
+    let slickAutoplaySpeed = localStorage.getItem('slickAutoplaySpeed');
+    $('input.carouselTiming').val(slickAutoplaySpeed);
+    if (!slickAutoplaySpeed) {
+        slickAutoplaySpeed = 3000;
+    }
+
     $('.carousel').slick({
         centerMode: true,
         centerPadding: '60px',
         slidesToShow: 3,
         autoplay: true,
-        autoplaySpeed: 3000,
+        autoplaySpeed: slickAutoplaySpeed,
     })
     slickFadeout($('.slick-center'));
 }
@@ -140,6 +146,15 @@ $(document).ready(function () {
     })
 
     slickInit();
+
+    $('input.carouselTiming').on("change", function() {
+        localStorage.setItem("slickAutoplaySpeed", $(this).val());
+        $("button.browserRefresh").show();
+    })
+
+    $("button.browserRefresh").on("click", function() {
+        window.location.reload(true);
+    })
 
     $('.carousel').on('beforeChange', function() {
         slickFadeout($('.slick-center').next());
