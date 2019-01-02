@@ -90,6 +90,15 @@ h1.logo a:before {
     }
 }
 
+.card-divider {
+    position: relative;
+    .fas {
+        position: absolute;
+        top: 15px;
+        right: 12px;
+    }
+}
+
 .more h2 {
     color: $bland-color;
 }
