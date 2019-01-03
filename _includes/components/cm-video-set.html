@@ -1,23 +1,26 @@
-{% for card in site.data.cmvideos %}
+{% for video in site.data.cmvideos %}
 <div class="cell small-4">
     <!-- card -->
-    <a data-open="reveal-{{card.id}}">
-        <div class="card{% if card.online %} hide-offline{% endif %}" id="{{card.id}}">
+    <a data-open="reveal-{{video.id}}">
+        <div class="card{% if video.online %} hide-offline{% endif %}" id="{{video.id}}">
             <div class="card-divider">
-                {{card.title}}
+                {{video.title}}
             </div>
         </div>
     </a>
 
     <!-- reveal -->
-    <div class="large reveal" id="reveal-{{card.id}}"
+    <div class="large reveal" id="reveal-{{video.id}}"
         data-reveal data-animation-in="scale-in-up easeInOut" data-animation-out="scale-out-down easeInOut">
         <h1>
-            {{card.title}}
+            {{video.title}}
         </h1>
         <div class="flex-video">
-            <video controls width="800">
-                <source src="/assets/video/callermax_videos/{{card.src}}" type="{{card.type}}">
+            <video controls width="800"
+                {% if video.poster %}
+                poster="{{ video.poster }}"
+                {% endif %}>
+                <source src="/assets/video/callermax_videos/{{video.src}}" type="{{video.type}}">
             </video>
         </div>
         <button class="close-button" data-close aria-label="Close modal" type="button">

@@ -3,12 +3,49 @@
         "id": "cm-intro",
         "title": "CallerMax Promo",
         "src": "callermax-promo.mp4",
+        "poster": "",
         "type": "video/mp4"
     },
     {
         "id": "cm-welcome",
         "title": "Welcome to CallerMax",
         "src": "welcome-to-callermax.mp4",
+        "poster": "",
+        "type": "video/mp4"
+    },
+    {
+        "id": "open-the-call",
+        "title": "Open the Call",
+        "src": "open-the-call.mp4",
+        "poster": "",
+        "type": "video/mp4"
+    },
+    {
+        "id": "bonding-overview",
+        "title": "Bonding Overview",
+        "src": "bonding-overview-animation.mp4",
+        "poster": "",
+        "type": "video/mp4"
+    },
+    {
+        "id": "case-for-support",
+        "title": "Case for Support",
+        "src": "case-for-support.mp4",
+        "poster": "",
+        "type": "video/mp4"
+    },
+    {
+        "id": "final-step",
+        "title": "Confirmation and Thanking",
+        "src": "final-step-confirmation-and-thanking.mp4",
+        "poster": "",
+        "type": "video/mp4"
+    },
+    {
+        "id": "make-the-ask",
+        "title": "How To Make the Ask",
+        "src": "how-to-make-the-ask.mp4",
+        "poster": "",
         "type": "video/mp4"
     }
 ]
