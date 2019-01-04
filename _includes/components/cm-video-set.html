@@ -17,10 +17,11 @@
         </h1>
         <div class="flex-video">
             <video controls width="800"
+                src="{{video.src}}"
+                type="{{video.type}}"
                 {% if video.poster %}
                 poster="{{ video.poster }}"
                 {% endif %}>
-                <source src="/assets/video/callermax_videos/{{video.src}}" type="{{video.type}}">
             </video>
         </div>
         <button class="close-button" data-close aria-label="Close modal" type="button">
