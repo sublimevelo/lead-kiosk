@@ -139,6 +139,15 @@ $(document).ready(function () {
 
     restoreCards();
 
+    // restore screensaver
+    const screensaverPoster = localStorage.getItem('screensaverPoster');
+    const screensaverSrc = localStorage.getItem('screensaverSrc');
+    if (screensaverPoster) {
+        $('.screensaver video').attr('poster', screensaverPoster);
+    }
+    $('.screensaver video').attr('src', screensaverSrc);
+    $(`input.screensaver-select[data-src='${screensaverSrc}']`).prop('checked', true);
+
     $(".available-cards input").on("change", function() {
         let cards = getCheckedCards();
         displayCards(cards);
@@ -192,6 +201,17 @@ $(document).ready(function () {
             $("body").addClass("screensaver-on");
             $('.carousel').slick('slickPause');
         }
+    })
+
+    $('input.screensaver-select').on('click', function () {
+        const src = $(this).data('src');
+        const poster = $(this).data('poster');
+        if (poster) {
+            $('.screensaver video').attr('poster', poster);
+            localStorage.setItem('screensaverPoster', poster);
+        }
+        $('.screensaver video').attr('src', src);
+        localStorage.setItem('screensaverSrc', src);
     })
 
 })
