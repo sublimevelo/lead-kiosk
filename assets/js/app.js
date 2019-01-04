@@ -74,6 +74,7 @@ const slickInit = function () {
         slidesToShow: 3,
         autoplay: true,
         autoplaySpeed: slickAutoplaySpeed,
+        swipe: false,
     })
     slickFadeout($('.slick-center'));
 }
