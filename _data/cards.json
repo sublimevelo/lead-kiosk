@@ -11,7 +11,7 @@
         "body": "Online caller training application to onboard new callers as well as provide advanced techniques to veteran staff."
       },
       "modal": {
-        "size": "medium",
+        "size": "small",
         "include": "components/cm-video-set.html",
         "title": "CallerMax Onboarding Training",
         "body": "Online caller training application to onboard new callers as well as provide advanced techniques to veteran staff."
@@ -29,7 +29,7 @@
         "body": "Here is an expanded description"
       },
       "modal": {
-        "size": "medium",
+        "size": "small",
         "image": {
           "href": ""
         },
