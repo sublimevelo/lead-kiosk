@@ -2,7 +2,7 @@
     {
         "id": "cm-intro",
         "title": "CallerMax Promo",
-        "src": "/assets/video/callermax_videos/callermax-promo.mp4",
+        "src": "https://s3.amazonaws.com/lead-philanthropy/videos/callermax_videos/callermax-promo.mp4",
         "poster": "/assets/img/posters/callermax-promo.png",
         "type": "video/mp4"
     },
