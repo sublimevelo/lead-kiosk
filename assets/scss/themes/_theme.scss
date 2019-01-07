@@ -54,6 +54,10 @@ h1.logo a:before {
     margin-bottom: 20px;
 }
 
+.slick-prev {
+    display: none;
+}
+
 .slick-prev:before, .slick-next:before {
     color: $light-bland-color;
     font-size: 69px;
