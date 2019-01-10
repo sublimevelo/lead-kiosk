@@ -55,11 +55,8 @@
         },
       "modal": {
         "size": "large",
-        "image": {
-          "href": "/assets/img/lead-team-1.png"
-            },
         "title": "The LEAD Team",
-        "body": "This will eventually be real content"
+        "include": "components/the-team.html"
         }
     }
 ]

@@ -81,9 +81,9 @@ h1.logo a:before {
     border-left: 1px solid transparent;
     border-right: 1px solid transparent;
     h3 {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         line-height: 1.2;
-        height: 3.2rem;
+        height: 4rem;
     }
     img.LEAD-tri {
         display: inline-block;
@@ -168,6 +168,15 @@ button.off-canvas-reveal {
 
 .normal {
     display: block;
+}
+
+.the-team {
+    h3, p {
+        margin-bottom: 0rem;
+    }
+    .cell {
+        margin-bottom: 2rem;
+    }
 }
 
 .screensaver-on {
