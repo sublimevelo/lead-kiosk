@@ -7,6 +7,13 @@ $primary-color-2: #2b3e82;
 $bland-color: #768797;
 $light-bland-color: #9aa9b7;
 
+@font-face {
+    font-family: 'OpenSansCondensed';
+    src: url('/assets/fonts/OpenSansCondensed-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     // padding-top: 20px;
     background-color: #fafafa;
@@ -16,6 +23,10 @@ body {
     // background: -webkit-linear-gradient(-45deg, $primary-color-1 0%,$primary-color-2 100%); /* Chrome10-25,Safari5.1-6 */
     // background: linear-gradient(135deg, $primary-color-1 0%,$primary-color-2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$primary-color-1', endColorstr='$primary-color-2',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+h1, h2, h3, .card-divider {
+    font-family: OpenSansCondensed;
 }
 
 .header {
@@ -94,15 +105,6 @@ h1.logo a:before {
     }
 }
 
-.card-divider {
-    position: relative;
-    .fas {
-        position: absolute;
-        top: 15px;
-        right: 12px;
-    }
-}
-
 .more h2 {
     color: $bland-color;
 }
@@ -120,14 +122,19 @@ button.off-canvas-reveal {
 }
 
 .card {
-    // border-color: $primary-color-1;
     border-color: $primary-color-2;
 }
 .card-divider {
     // background: $primary-color-2;
+    position: relative;
     background: $primary-color-1;
     color: White;
-    font-size: 1.3rem;
+    font-size: 2rem;
+    .fas {
+        position: absolute;
+        top: 15px;
+        right: 12px;
+    }
 }
 
 .hide-offline {
