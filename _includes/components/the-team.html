@@ -1,61 +1,25 @@
 <section class="the-team">
     <div class="grid-container fluid">
         <div class="grid-x align-center">
+            {% for person in site.data.team %}
             <div class="cell small-4 text-center team-member">
-                <img src="/assets/img/people/cgafke.jpg" alt="Clark Gafke">
-                <h3>Clark Gafke</h3>
-                <p>Chief Executive Officer</p>
-                <a href="mailto:cgafke@leadphilanthropy.com">cgafke@leadphilanthropy.com</a>
+                <a data-open="reveal-{{ person.id }}"><img src="{{ person.img.href }}" alt="{{ person.name }}"></a>
+                <h3>{{ person.name }}</h3>
+                <p>{{ person.title }}</p>
+                <a href="{{ person.email }}">{{ person.email }}</a>
             </div>
-            <div class="cell small-4 text-center team-member">
-                <img src="/assets/img/people/ccrow.jpg" alt="Clinton Crow">
-                <h3>Clinton Crow</h3>
-                <p>Chief Operating Officer</p>
-                <a href="mailto:ccrow@leadphilanthropy.com">ccrow@leadphilanthropy.com</a>
-            </div>
-            <div class="cell small-4 text-center team-member">
-                <img src="/assets/img/people/rgafke.jpg" alt="Roger Gafke">
-                <h3>Roger Gafke</h3>
-                <p>Senior Consultant</p>
-                <a href="mailto:rgafke@leadphilanthropy.com">rgafke@leadphilanthropy.com</a>
-            </div>
-
-            <div class="cell small-4 text-center team-member">
-                <img src="/assets/img/people/thenry.jpg" alt="Thad Henry">
-                <h3>Thad Henry</h3>
-                <p>Senior Consultant</p>
-                <a href="mailto:thenry@leadphilanthropy.com">thenry@leadphilanthropy.com</a>
-            </div>
-            <div class="cell small-4 text-center team-member">
-                <img src="/assets/img/people/lgracey.jpg" alt="Lisa Gracey">
-                <h3>Lila Gracey</h3>
-                <p>Senior Consultant</p>
-                <a href="mailto:lgracey@leadphilanthropy.com">lgracey@leadphilanthropy.com</a>
-            </div>
-            <div class="cell small-4 text-center team-member">
-                <img src="/assets/img/people/pmoes.jpg" alt="Peter Moes">
-                <h3>Peter Moes</h3>
-                <p>Information Officer</p>
-                <a href="mailto:pmoes@leadphilanthropy.com">pmoes@leadphilanthropy.com</a>
-            </div>
-            <div class="cell small-4 text-center team-member">
-                <img src="/assets/img/people/sbrink.jpg" alt="Sharla Brink">
-                <h3>Sharla Brink</h3>
-                <p>Graphic Designer</p>
-                <a href="mailto:sbrink@leadphilanthropy.com">sbrink@leadphilanthropy.com</a>
-            </div>
-            <div class="cell small-4 text-center team-member">
-                <img src="/assets/img/people/chughes.jpg" alt="Chris Hughes">
-                <h3>Christopher Hughes</h3>
-                <p>Technology Officer</p>
-                <a href="mailto:chughes@leadphilanthropy.com">chughes@leadphilanthropy.com</a>
-            </div>
-            <div class="cell small-4 text-center team-member">
-                <img src="/assets/img/people/theath.jpg" alt="Tanya Heath">
-                <h3>Tanya Heath</h3>
-                <p>Marketing Officer</p>
-                <a href="mailto:theath@leadphilanthropy.com">theath@leadphilanthropy.com</a>
-            </div>
+            {% endfor %}
         </div>
-</div>
+    </div>
+    {% for person in site.data.team %}
+    <div class="reveal bio-reveal" id="reveal-{{ person.id }}" data-reveal data-animation-in="scale-in-up easeInOut"
+        data-animation-out="scale-out-down easeInOut">
+        <h2>{{ person.name }}, {{ person.title }}</h2>
+        <img src="{{ person.img.href }}" class="float-left" alt="{{ person.name }}">
+        <div>{{ person.bio }}</div>
+        <button class="close-button" data-close aria-label="Close modal" type="button">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    {% endfor %}
 </section>
