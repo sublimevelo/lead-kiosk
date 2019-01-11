@@ -7,14 +7,14 @@
         "image": {
           "href": "/assets/img/posters/callermax-promo.png"
             },
-        "title": "CallerMax Onboarding Training",
-        "body": "Online caller training application to onboard new callers as well as provide advanced techniques to veteran staff."
+        "title": "CallerMax&trade; Onboarding Training",
+        "body": "Onboard new callers and provide advanced techniques to veteran staff through online training program."
       },
       "modal": {
         "size": "small",
         "include": "components/cm-video-set.html",
-        "title": "CallerMax Onboarding Training",
-        "body": "Online caller training application to onboard new callers as well as provide advanced techniques to veteran staff."
+        "title": "CallerMax&trade; Onboarding Training",
+        "body": "Onboard new callers and provide advanced techniques to veteran staff through online training program."
       }
     },
     {
@@ -23,10 +23,10 @@
       "online": false,
       "card": {
         "image": {
-          "href": "/assets/img/callermax-still-1.png"
+          "href": "/assets/img/posters/toledo-ymca.png"
         },
         "title": "Virtual Volunteer",
-        "body": "Here is an expanded description"
+        "body": "Allow whiteboard animation to cut through the noise of traditional direct mail and email solicitations."
       },
       "modal": {
         "size": "small",
@@ -35,11 +35,11 @@
         },
         "video": {
           "src": "/assets/video/vv_videos/Toledo-YMCA-feasibility-study-overview-1_0.mp4",
-          "poster": "/assets/img/callermax-still-1.png",
+          "poster": "/assets/img/posters/toledo-ymca.png",
           "type": "video/mp4"
         },
         "title": "Virtual Volunteer services",
-        "body": "Here is an expanded description"
+        "body": "Allow whiteboard animation to cut through the noise of traditional direct mail and email solicitations."
       }
     },
     {
@@ -51,7 +51,7 @@
           "href": "/assets/img/lead-team-1.png"
             },
         "title": "Meet the LEAD Team",
-        "body": "Thousands of years of combined fundraising experience at your service for pennies a day."
+        "body": "Our team's decades of experience ensures each strategy and recommendation puts your Prospects First."
         },
       "modal": {
         "size": "large",
