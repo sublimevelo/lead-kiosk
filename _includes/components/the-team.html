@@ -17,9 +17,9 @@
         <h2>{{ person.name }}, {{ person.title }}</h2>
         <img src="{{ person.img.href }}" class="float-left" alt="{{ person.name }}">
         <div>{{ person.bio }}</div>
-        <button class="close-button" data-close aria-label="Close modal" type="button">
+        <a data-open="reveal-lead-team" class="close-button">
             <span aria-hidden="true">&times;</span>
-        </button>
+        </a>
     </div>
     {% endfor %}
 </section>
