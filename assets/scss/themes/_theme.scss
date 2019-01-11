@@ -131,6 +131,9 @@ button.off-canvas-reveal {
     background: $primary-color-1;
     color: White;
     font-size: 2rem;
+    p {
+        width: 100%;
+    }
     .fas {
         position: absolute;
         top: 15px;

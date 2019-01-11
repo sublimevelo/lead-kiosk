@@ -13,10 +13,10 @@ title: Onlypage
     {% endif %}
       <div class="card{% if card.online %} hide-offline{% endif %}" id="{{card.id}}">
           <div class="card-divider">
-              {{card.card.title}}{% if card.type == "link" %}<i class="fas fa-external-link-alt"></i>{% endif %}
+              <p class="text-center">{{card.card.title}}{% if card.type == "link" %}<i class="fas fa-external-link-alt"></i>{% endif %}</p>
           </div>
           <img src="{{card.card.image.href}}" >
-          <div class="card-section">
+          <div class="card-section text-center">
               {{card.card.body}}
           </div>
       </div>
