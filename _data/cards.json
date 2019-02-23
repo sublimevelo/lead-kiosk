@@ -5,7 +5,7 @@
     "online": false,
     "card": {
       "image": {
-        "href": "/assets/img/connections-promo.jpg"
+        "href": "/assets/img/posters/connections-promo.jpg"
           },
       "title": "Connections — Phonathon and Beyond",
       "body": "Get your learn on in St. Louis!"
@@ -13,7 +13,7 @@
     "modal": {
       "size": "medium",
       "image": {
-        "href": "/assets/img/callermax-still-1.png"
+        "href": "/assets/img/posters/connections-promo.jpg"
           },
       "title": "Connections — Phonathon and Beyond",
       "body": "Get your lean on in St. Louis!"
