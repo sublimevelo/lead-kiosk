@@ -4,7 +4,7 @@ layout: index
 title: Onlypage
 ---
 {% for card in site.data.cards %}
-  <div class="cell small-4">
+  <div class="cell small-6">
     <!-- card -->
     {% if card.type == "modal" %}
     <a data-open="reveal-{{card.id}}">
