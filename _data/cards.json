@@ -1,5 +1,25 @@
 [
-    {
+  {
+    "id": "phonathon-and-beyond-2019",
+    "type": "modal",
+    "online": false,
+    "card": {
+      "image": {
+        "href": "/assets/img/callermax-still-1.png"
+          },
+      "title": "Connections — Phonathon and Beyond",
+      "body": "Get your learn on in St. Louis!"
+    },
+    "modal": {
+      "size": "medium",
+      "image": {
+        "href": "/assets/img/callermax-still-1.png"
+          },
+      "title": "Connections — Phonathon and Beyond",
+      "body": "Get your lean on in St. Louis!"
+      }
+  },  
+  {
       "id": "cm-video",
       "type": "modal",
       "online": false,
