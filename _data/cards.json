@@ -5,18 +5,18 @@
     "online": false,
     "card": {
       "image": {
-        "href": "/assets/img/posters/connections-promo.jpg"
+        "href": "/assets/img/connections-promo-sm.jpg"
           },
       "title": "Connections — Phonathon and Beyond",
-      "body": "Get your learn on in St. Louis!"
+      "body": ""
     },
     "modal": {
       "size": "medium",
       "image": {
-        "href": "/assets/img/posters/connections-promo.jpg"
+        "href": "/assets/img/connections-promo-lg.jpg"
           },
       "title": "Connections — Phonathon and Beyond",
-      "body": "Get your lean on in St. Louis!"
+      "body": ""
       }
   },  
   {
