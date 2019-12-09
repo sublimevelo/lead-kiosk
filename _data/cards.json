@@ -1,11 +1,11 @@
 [
   {
-    "id": "phonathon-and-beyond-2019",
+    "id": "phonathon-and-beyond-2020",
     "type": "modal",
     "online": false,
     "card": {
       "image": {
-        "href": "/assets/img/connections-promo-sm.jpg"
+        "href": "/assets/img/connections-promo-sm.png"
           },
       "title": "Connections — Phonathon and Beyond",
       "body": ""
