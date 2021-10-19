@@ -2,223 +2,229 @@
 // Theme
 // --------------------------------------------------
 
-$primary-color-1: #0B5B9C;
-$primary-color-2: #2b3e82;
+$primary-color-1: #2e9967;
+$primary-color-2: #1f5c3e;
 $bland-color: #768797;
 $light-bland-color: #9aa9b7;
 
 @font-face {
-    font-family: 'OpenSansCondensed';
-    src: url('/assets/fonts/OpenSansCondensed-Light.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "OpenSansCondensed";
+  src: url("/assets/fonts/OpenSansCondensed-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {
-    // padding-top: 20px;
-    background-color: #fafafa;
-    // /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0164a5+0,2b3e82+100 */
-    // background: $primary-color-1; /* Old browsers */
-    // background: -moz-linear-gradient(-45deg, $primary-color-1 0%, $primary-color-2 100%); /* FF3.6-15 */
-    // background: -webkit-linear-gradient(-45deg, $primary-color-1 0%,$primary-color-2 100%); /* Chrome10-25,Safari5.1-6 */
-    // background: linear-gradient(135deg, $primary-color-1 0%,$primary-color-2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$primary-color-1', endColorstr='$primary-color-2',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  // padding-top: 20px;
+  background-color: #fafafa;
+  // /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0164a5+0,2b3e82+100 */
+  // background: $primary-color-1; /* Old browsers */
+  // background: -moz-linear-gradient(-45deg, $primary-color-1 0%, $primary-color-2 100%); /* FF3.6-15 */
+  // background: -webkit-linear-gradient(-45deg, $primary-color-1 0%,$primary-color-2 100%); /* Chrome10-25,Safari5.1-6 */
+  // background: linear-gradient(135deg, $primary-color-1 0%,$primary-color-2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$primary-color-1', endColorstr='$primary-color-2',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
-h1, h2, h3, .card-divider {
-    font-family: OpenSansCondensed;
-    font-weight: 700;
+h1,
+h2,
+h3,
+.card-divider {
+  font-family: OpenSansCondensed;
+  font-weight: 700;
 }
 
 .header {
-    padding: 0;
-    padding-top: 20px;
-    background: linear-gradient(to top,#2c3983,#0065ab);
-    background-position: center;
+  padding: 0;
+  padding-top: 20px;
+  background: linear-gradient(to top, $primary-color-2, $primary-color-1);
+  background-position: center;
 }
 
 .header-bottom {
-    background-image: url(/assets/img/LEAD_curve_top_upper.svg);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    height: 100px;
-    margin-top: -2px;
+  background-image: url(/assets/img/LEAD_curve_top_upper.svg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 100px;
+  margin-top: -2px;
 }
 
 h1.logo a {
-    display: block;
-    overflow: hidden;
-    width: 350px;
-    height: 116px;
-    // background: url(/assets/img/LEAD_logo_xmas.png) no-repeat;
-    background: url(/assets/img/LEAD_logo_white.png) no-repeat;
-    background-size: 350px 116px;
-    margin: 0 auto;
+  display: block;
+  overflow: hidden;
+  width: 350px;
+  height: 116px;
+  // background: url(/assets/img/LEAD_logo_xmas.png) no-repeat;
+  background: url(/assets/img/LEAD_logo_white.png) no-repeat;
+  background-size: 350px 116px;
+  margin: 0 auto;
 }
 
 h1.logo a:before {
-    content: "";
-    display: block;
-    width: 0;
-    height: 100%;
+  content: "";
+  display: block;
+  width: 0;
+  height: 100%;
 }
 
 .carousel-container {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .slick-prev {
-    display: none;
+  display: none;
 }
 
-.slick-prev:before, .slick-next:before {
-    color: $light-bland-color;
-    font-size: 69px;
+.slick-prev:before,
+.slick-next:before {
+  color: $light-bland-color;
+  font-size: 69px;
 }
 
 .slick-prev:before {
-    margin-left: -49px;
+  margin-left: -49px;
 }
 
 .more img {
-    width: 110px;
+  width: 110px;
 }
 
 .slick-slide {
+  transition: opacity 1s;
+  background-color: transparent;
+  color: $primary-color-2;
+  opacity: 0.1;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  h3 {
+    font-size: 1.8rem;
+    line-height: 1.2;
+    height: 4rem;
+  }
+  img.LEAD-tri {
+    display: inline-block;
+    height: 1.25rem;
+  }
+  &.slick-center {
     transition: opacity 1s;
-    background-color: transparent;
-    color: $primary-color-2;
-    opacity: .1;
-    padding: 1rem 2rem;
-    font-size: 1rem;
-    border-left: 1px solid transparent;
-    border-right: 1px solid transparent;
-    h3 {
-        font-size: 1.8rem;
-        line-height: 1.2;
-        height: 4rem;
-    }
-    img.LEAD-tri {
-        display: inline-block;
-        height: 1.25rem;
-    }
-    &.slick-center {
-        transition: opacity 1s;
-    }
+  }
 }
 
 .more h2 {
-    color: $bland-color;
+  color: $bland-color;
 }
 
 button.off-canvas-reveal {
-    position: fixed;
-    bottom: 10px;
-    left: 10px;
-    background: White !important;
-    opacity: .7;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  background: White !important;
+  opacity: 0.7;
 }
 
 .off-canvas {
-    padding: .5rem;
+  padding: 0.5rem;
 }
 
 .card {
-    border-color: $primary-color-2;
+  border-color: $primary-color-2;
 }
 .card-divider {
-    // background: $primary-color-2;
-    position: relative;
-    background: $primary-color-1;
-    color: White;
-    font-size: 2rem;
-    p {
-        width: 100%;
-    }
-    .fas {
-        position: absolute;
-        top: 15px;
-        right: 12px;
-    }
+  // background: $primary-color-2;
+  position: relative;
+  background: $primary-color-1;
+  color: White;
+  font-size: 2rem;
+  p {
+    width: 100%;
+  }
+  .fas {
+    position: absolute;
+    top: 15px;
+    right: 12px;
+  }
 }
 
 .bio-reveal {
-    img {
-        padding-right: 20px;
-    }
+  img {
+    padding-right: 20px;
+  }
 }
 
 .tagline {
-    color: white;
-    text-align: center;
-    margin-bottom: 0;
-    // visual centering
-    margin-left: -20px;
+  color: white;
+  text-align: center;
+  margin-bottom: 0;
+  // visual centering
+  margin-left: -20px;
 }
 
 .hide-offline {
-    display: block;
+  display: block;
 }
 
 .show-offline-only {
-    display: none;
+  display: none;
 }
 
 .offline {
-    .hide-offline {
-        display: none;
-    }
-    .show-offline-only {
-        display: block;
-    }
+  .hide-offline {
+    display: none;
+  }
+  .show-offline-only {
+    display: block;
+  }
 }
 
 .show-no-connection-only {
-    display: none;
+  display: none;
 }
 
 .no-connection {
-    .show-no-connection-only {
-        display: block;
-    }
-    span.show-no-connection-only {
-        display: inline-block;
-    }
+  .show-no-connection-only {
+    display: block;
+  }
+  span.show-no-connection-only {
+    display: inline-block;
+  }
 }
 
 .screensaver {
-    display: none;
-    background: lightslategrey;
-    z-index: 1000;
+  display: none;
+  background: lightslategrey;
+  z-index: 1000;
 }
 
 .normal {
-    display: block;
+  display: block;
 }
 
 .the-team {
-    h3, p {
-        margin-bottom: 0rem;
-    }
-    .cell {
-        margin-bottom: 2rem;
-    }
+  h3,
+  p {
+    margin-bottom: 0rem;
+  }
+  .cell {
+    margin-bottom: 2rem;
+  }
 }
 
 .screensaver-on {
-    .screensaver {
-        display: block;
-    }
-    .normal, .normal * {
-        display: none;
-    }
+  .screensaver {
+    display: block;
+  }
+  .normal,
+  .normal * {
+    display: none;
+  }
 }
 
 @media print, screen and (min-width: 40em) {
-    .reveal.medium {
-        width: 70%;
-    }
-    .reveal.small {
-        width: 55%;
-    }
+  .reveal.medium {
+    width: 70%;
+  }
+  .reveal.small {
+    width: 55%;
+  }
 }
