@@ -6,77 +6,77 @@
     "card": {
       "image": {
         "href": "/assets/img/connections-promo-sm.png"
-          },
-      "title": "Connections — Phonathon and Beyond",
+      },
+      "title": "Connections — Phonathon and Beyond --- 4-H Kiosk!!!!!!!!!!!!!!!!",
       "body": ""
     },
     "modal": {
       "size": "small",
       "image": {
         "href": "/assets/img/connections-promo-lg.png"
-          },
+      },
       "title": "Connections — Phonathon and Beyond",
       "body": ""
-      }
-  },  
-  {
-      "id": "cm-video",
-      "type": "modal",
-      "online": false,
-      "card": {
-        "image": {
-          "href": "/assets/img/posters/callermax-promo.png"
-            },
-        "title": "CallerMax&trade; Onboarding Training",
-        "body": "Onboard new callers and provide advanced techniques to veteran staff through online training program."
-      },
-      "modal": {
-        "size": "small",
-        "include": "components/cm-video-set.html",
-        "title": "CallerMax&trade; Onboarding Training",
-        "body": "Onboard new callers and provide advanced techniques to veteran staff through online training program."
-      }
-    },
-    {
-      "id": "vv-video",
-      "type": "modal",
-      "online": false,
-      "card": {
-        "image": {
-          "href": "/assets/img/posters/toledo-ymca.png"
-        },
-        "title": "Virtual Volunteer",
-        "body": "Allow whiteboard animation to cut through the noise of traditional direct mail and email solicitations."
-      },
-      "modal": {
-        "size": "small",
-        "image": {
-          "href": ""
-        },
-        "video": {
-          "src": "/assets/video/vv_videos/Toledo-YMCA-feasibility-study-overview-1_0.mp4",
-          "poster": "/assets/img/posters/toledo-ymca.png",
-          "type": "video/mp4"
-        },
-        "title": "Virtual Volunteer services",
-        "body": "Allow whiteboard animation to cut through the noise of traditional direct mail and email solicitations."
-      }
-    },
-    {
-      "id": "lead-team",
-      "type": "modal",
-      "online": false,
-      "card": {
-        "image": {
-          "href": "/assets/img/lead-team-1.png"
-            },
-        "title": "Meet the LEAD Team",
-        "body": "Our team's decades of experience ensures each strategy and recommendation puts your Prospects First."
-        },
-      "modal": {
-        "size": "large",
-        "title": "The LEAD Team",
-        "include": "components/the-team.html"
-        }
     }
+  },
+  {
+    "id": "cm-video",
+    "type": "modal",
+    "online": false,
+    "card": {
+      "image": {
+        "href": "/assets/img/posters/callermax-promo.png"
+      },
+      "title": "CallerMax&trade; Onboarding Training",
+      "body": "Onboard new callers and provide advanced techniques to veteran staff through online training program."
+    },
+    "modal": {
+      "size": "small",
+      "include": "components/cm-video-set.html",
+      "title": "CallerMax&trade; Onboarding Training",
+      "body": "Onboard new callers and provide advanced techniques to veteran staff through online training program."
+    }
+  },
+  {
+    "id": "vv-video",
+    "type": "modal",
+    "online": false,
+    "card": {
+      "image": {
+        "href": "/assets/img/posters/toledo-ymca.png"
+      },
+      "title": "Virtual Volunteer",
+      "body": "Allow whiteboard animation to cut through the noise of traditional direct mail and email solicitations."
+    },
+    "modal": {
+      "size": "small",
+      "image": {
+        "href": ""
+      },
+      "video": {
+        "src": "/assets/video/vv_videos/Toledo-YMCA-feasibility-study-overview-1_0.mp4",
+        "poster": "/assets/img/posters/toledo-ymca.png",
+        "type": "video/mp4"
+      },
+      "title": "Virtual Volunteer services",
+      "body": "Allow whiteboard animation to cut through the noise of traditional direct mail and email solicitations."
+    }
+  },
+  {
+    "id": "lead-team",
+    "type": "modal",
+    "online": false,
+    "card": {
+      "image": {
+        "href": "/assets/img/lead-team-1.png"
+      },
+      "title": "Meet the LEAD Team",
+      "body": "Our team's decades of experience ensures each strategy and recommendation puts your Prospects First."
+    },
+    "modal": {
+      "size": "large",
+      "title": "The LEAD Team",
+      "include": "components/the-team.html"
+    }
+  }
 ]
