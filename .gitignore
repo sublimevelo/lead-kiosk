@@ -24,6 +24,7 @@ Icon
 # Files that might appear on external disk
 .Spotlight-V100
 .Trashes
+*.OLD
 
 # Windows
 Thumbs.db
@@ -52,3 +53,9 @@ Gemfile.lock
 
 # Composer
 composer.lock
+
+# Node
+node_modules
+
+# Editors
+*.code-workspace
